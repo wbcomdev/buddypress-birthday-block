@@ -1,0 +1,67 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "wbcom-designs/buddypress-birthday",
+    "version": "1.0.0",
+    "title": "BuddyPress Birthday",
+    "category": "wbcom-designs",
+    "icon": "buddicons-community",
+    "description": "Display upcoming birthdays of your members.",
+    "supports": {
+        "html": false
+    },
+    "textdomain": "buddypress-birthday",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
+    "render": "file:./render.php",
+    "attributes": {
+        "itemIDs": {
+            "type": "array",
+            "items": {
+                "type": "integer"
+            },
+            "default": []
+        },
+        "title": {
+            "type": "string",
+            "default": "Upcoming Birthdays"
+        },
+        "displayAge": {
+            "type": "boolean",
+            "default": true
+        },
+        "sendMessage": {
+            "type": "boolean",
+            "default": true
+        },
+        "dateFormat": {
+            "type": "string",
+            "default": "F D"
+        },
+        "rangeLimit": {
+            "type": "string",
+            "default": "no_limit"
+        },
+        "birthdaysOf": {
+            "type": "string",
+            "default": "all"
+        },
+        "nameType": {
+            "type": "string",
+            "default": "user_name"
+        },
+        "limit": {
+            "type": "number",
+            "default": 5
+        },
+        "emoji": {
+            "type": "boolean",
+            "default": true
+        },
+        "field": {
+            "type": "string",
+            "default": "full"
+        }
+    }
+}
